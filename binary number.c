@@ -4,15 +4,15 @@
 int main()
 {
 	int num, binary, sum = 0, i = 1;
-	printf("10Áø¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
+	printf("10ì§„ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
 	scanf("%d", &num);
-	printf("\n\n10Áø¼ö : %d", num);
+	printf("\n\n10ì§„ìˆ˜ : %d", num);
 	while (num > 0)
 	{
-		binary = num % 2;		//2·Î ³ª´« ³ª¸ÓÁö¸¦ binary¿¡ ÀúÀå
-		sum += binary * i;		//binary¿¡ i¸¦ °öÇÑ °ªÀ» sum¿¡ ÀúÀå
-		num = num / 2;		 //num¿¡ 2·Î ³ª´« ¸òÀ» num¿¡ ÀúÀå
-		i *= 10;		//i¿¡ 10À» °öÇÑ °ª¤·¸£ i¿¡ ÀúÀå
+		binary = num % 2;		//2ë¡œ ë‚˜ëˆˆ ë‚˜ë¨¸ì§€ë¥¼ binaryì— ì €ì¥
+		sum += binary * i;		//binaryì— ië¥¼ ê³±í•œ ê°’ì„ sumì— ì €ì¥
+		num = num / 2;		 //numì— 2ë¡œ ë‚˜ëˆˆ ëª«ì„ numì— ì €ì¥
+		i *= 10;		//iì— 10ì„ ê³±í•œ ê°’ì„ iì— ì €ì¥
 	}
-	printf("\n 2Áø¼ö : %d\n", sum);
+	printf("\n 2ì§„ìˆ˜ : %d\n", sum);
 }
