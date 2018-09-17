@@ -31,13 +31,13 @@ int score_process(int a)
 void input_score()
 {
 	system("cls");
-	printf("ÇĞ¹ø : ");
+	printf("í•™ë²ˆ : ");
 	scanf("%d", &person[i].number);
-	printf("ÀÌ¸§ : ");
+	printf("ì´ë¦„ : ");
 	scanf("%s", person[i].name);
-	printf("¼öÇĞ Á¡¼ö : ");
+	printf("ìˆ˜í•™ ì ìˆ˜ : ");
 	scanf("%d", &person[i].sub1);
-	printf("¿µ¾î Á¡¼ö : ");
+	printf("ì˜ì–´ ì ìˆ˜ : ");
 	scanf("%d", &person[i].sub2);
 	person[i].score1 = score_process(person[i].sub1);
 	person[i].score2 = score_process(person[i].sub2);
@@ -49,8 +49,8 @@ void print_score()
 	int num,j,but;
 	char a;
 	system("cls");
-	printf("¼ºÀû È®ÀÎ\n");
-	printf("ÇĞ¹ø : ");
+	printf("ì„±ì  í™•ì¸\n");
+	printf("í•™ë²ˆ : ");
 	scanf("%d", &num);
 
 	for (j = 0; j < 3; j++)
@@ -61,17 +61,17 @@ void print_score()
 	system("cls");
 
 	printf("--------------------------\n");
-	printf("ÇĞ¹ø : %d\n", person[j].number);
-	printf("ÀÌ¸§ : %s\n", person[j].name);
+	printf("í•™ë²ˆ : %d\n", person[j].number);
+	printf("ì´ë¦„ : %s\n", person[j].name);
 	printf("math : %d\n", person[j].sub1);
-	printf("ÇĞÁ¡ : %c\n", person[j].score1);
+	printf("í•™ì  : %c\n", person[j].score1);
 	printf("english : %d\n", person[j].sub2);
-	printf("ÇĞÁ¡ : %c\n", person[j].score2);
+	printf("í•™ì  : %c\n", person[j].score2);
 	printf("--------------------------");
 
 	
 
-									//±×³É ³Ñ¾î°¡´Â ºÎºĞ Ã³¸® ÇØ¾ßÇÔ
+									//ê·¸ëƒ¥ ë„˜ì–´ê°€ëŠ” ë¶€ë¶„ ì²˜ë¦¬ í•´ì•¼í•¨
 	
 }
 
@@ -81,9 +81,9 @@ int menu()
 	while (1)
 	{
 		system("cls");
-		printf("1.¼ºÀûÀÔ·Â\n");
-		printf("2.¼ºÀû-ÇĞ»ıº° Ãâ·Â\n");
-		printf("3.Á¾·á\n");
+		printf("1.ì„±ì ì…ë ¥\n");
+		printf("2.ì„±ì -í•™ìƒë³„ ì¶œë ¥\n");
+		printf("3.ì¢…ë£Œ\n");
 
 		scanf("%d", &sel);
 
