@@ -44,7 +44,7 @@ void input_score()
 	i++;
 	getchar();
 }
-void print_score()
+int print_score()
 {
 	int num,j,but;
 	char a;
@@ -53,7 +53,7 @@ void print_score()
 	printf("학번 : ");
 	scanf("%d", &num);
 
-	for (j = 0; j < 3; j++)
+	for (j = 0; j < i; j++)
 	{
 		if (person[j].number == num)
 			break;
@@ -70,9 +70,9 @@ void print_score()
 	printf("--------------------------");
 
 	
-
-									//그냥 넘어가는 부분 처리 해야함
-	
+	getch();
+								
+	return 0;
 }
 
 int menu()
