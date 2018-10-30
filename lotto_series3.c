@@ -18,7 +18,7 @@ void input_nums(int *lotto_nums)
 	int i, j;
 	for (i = 0; i < 6; i++)
 	{
-		printf("¹øÈ£ ÀÔ·Â : ");
+		printf("ë²ˆí˜¸ ìž…ë ¥ : ");
 		scanf("%d", &lotto_nums[i]);
 		if (i != 0)
 		{
@@ -26,7 +26,7 @@ void input_nums(int *lotto_nums)
 			{
 				if (lotto_nums[i] == lotto_nums[j])
 				{
-					printf("°°Àº ¹øÈ£°¡ ÀÖ½À´Ï´Ù.");
+					printf("ê°™ì€ ë²ˆí˜¸ê°€ ìžˆìŠµë‹ˆë‹¤.\");
 					i--;
 					break;
 				}
@@ -37,7 +37,7 @@ void input_nums(int *lotto_nums)
 
 void print_nums(int *lotto_nums)
 {
-	printf("·Î¶Ç ¹øÈ£ : ");
+	printf("ë¡œë˜ ë²ˆí˜¸ : ");
 	for (int i = 0; i < 6; i++)
 	{
 		printf("%d ", lotto_nums[i]);
